@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- "defer" compile le javascript en dernier -->
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <table class="container">
+        <tr>
+            <td colspan = "4">
+                <input class="display-box" type="text" id="result" placeholder="0" disabled>
+            </td>
+        </tr>
+        
+        <tr>
+            <!-- function display() affiche la valeur du button dont on clique -->
+            <!-- function clearScreen() efface tout les valeurs entrées -->
+            <td>
+                <input class="button button-clear" type="button" value="C" 
+                onclick="clearScreen()">
+            </td>
+            <td>
+                <input class="button button-others" type="button" value="()" 
+                onclick="display('()')">
+            </td>
+            <td>
+                <input class="button button-others" type="button" value="%" 
+                onclick="display('%')">
+            </td>
+            <td>
+                <input class="button button-others" type="button" value="/" 
+                id="operator" onclick="display(' / ')">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="button" type="button" value="7" 
+                onclick="display('7')">
+            </td>
+            <td>
+                <input class="button" type="button" value="8" 
+                onclick="display('8')">
+            </td>
+            <td>
+                <input class="button" type="button" value="9" 
+                onclick="display('9')">
+            </td>
+            <td>
+                <input class="button button-others" type="button" value="*" 
+                id="operator" onclick="display(' * ')">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="button" type="button" value="4" 
+                onclick="display('4')">
+            </td>
+            <td>
+                <input class="button" type="button" value="5" 
+                onclick="display('5')">
+            </td>
+            <td>
+                <input class="button" type="button" value="6" 
+                onclick="display('6')">
+            </td>
+            <td>
+                <input class="button button-others" type="button" value="-" 
+                id="operator" onclick="display(' - ')">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="button" type="button" value="1" 
+                onclick="display('1')">
+            </td>
+            <td>
+                <input class="button" type="button" value="2" 
+                onclick="display('2')">
+            </td>
+            <td>
+                <input class="button" type="button" value="3" 
+                onclick="display('3')">
+            </td>
+            <td>
+                <input class="button button-others" type="button" value="+" 
+                id="operator" onclick="display(' + ')">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="button button-others" type="button" value="." 
+                onclick="display('.')">
+            </td>
+            <td>
+                <input class="button" type="button" value="0" 
+                onclick="display('0')">
+            </td>
+            <td colspan="2">
+                <input class="button button-equal" type="button" value="=" 
+                onclick="calculator()">
+            </td>
+        </tr>
+    </table>
+   <!-- <label for="number">Enter a number :</label>
+   <input name="number" id="firstValue">
+
+   <label for="operator">Choose an operator :</label>
+   <select name="operator" id="operator">
+       <option value="+">+</option>
+       <option value="-">-</option>
+       <option value="*">*</option>
+       <option value="/">/</option>
+   </select>
+
+   <label for="number">Enter a number :</label>
+   <input name="number" id="secondValue">
+
+   <button type="button" onclick="calculator()">=</button>
+   <p id="result"></p> -->
+</body>
+</html>

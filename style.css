@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 11.3rem;
+    background-image: linear-gradient(to bottom left, #ffa0a0, #ffaf68);
+}
+
+.container {
+    height: 60vh;
+    width: 30vw;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 20px 40px, rgba(0, 0, 0, 0.23) 0px 12px 12px;
+    border-radius: 1em;
+}
+
+.display-box {
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 3rem;
+    text-align: end;
+    background-color: #f7f7f7;
+    color: #1761cb;
+    border: 0.2px solid #999;
+    border-radius: 5px;
+    height: 15vh;
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.button {
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 2rem;
+    background-color: #f7f7f7;
+    color: #444;
+    border: 0.5px solid #999;
+    height: 5vh;
+    width: 5vw;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+.button-clear {
+    color: #a90015;
+}
+
+.button-others {
+    color: #1761cb;
+}
+
+.button-equal {
+    background-color: #1761cb;
+    color: #f7f7f7;
+    width: 100%;
+}
+
+.button:active {
+    background-color: #999 ;
+}
